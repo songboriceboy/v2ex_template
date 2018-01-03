@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<!-- saved from url=(0031)http://www.pythonzh.cn/post/73/ -->
+<html lang="zh-cn"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <!-- 百度验证 -->
+    <meta name="baidu-site-verification" content="Y2JKmTtCPI">
+    <link rel="shortcut icon" type="image/x-icon" href="http://www.pythonzh.cn/static/forum/favicon.ico">
+    <link rel="stylesheet" href="./有谁知道 The Django Book 网站的源码在哪么？ - Pythonzhcn_files/bootstrap.min.css">
+    <link href="./有谁知道 The Django Book 网站的源码在哪么？ - Pythonzhcn_files/font-awesome.min.css" rel="stylesheet">
+    
+    <title>有谁知道 The Django Book 网站的源码在哪么？ - Pythonzhcn</title>
+    <style>
+        img {
+            max-width: 100%;
+        }
+
+        .bg-white {
+            background-color: #fff;
+        }
+
+        .mugshot-24 {
+            width: 24px;
+            height: 24px;
+        }
+
+        .mugshot-48 {
+            width: 48px;
+            height: 48px;
+        }
+
+        .mugshot-96 {
+            width: 96px;
+            height: 96px;
+        }
+
+        .post-title {
+            color: #555;
+            line-height: 1.3em;
+        }
+
+        .list-dot-divider li:not(:last-child):after {
+            content: ' ·';
+            font-size: 1em;
+        }
+
+        #id_honeypot {
+            display: none;
+        }
+
+        .hot {
+            color: red;
+        }
+
+        .pinned {
+            color: #ff7700;
+        }
+
+        .highlight {
+            color: #b71ed7;
+        }
+
+        .cover-72 {
+            width: 72px;
+            height: 72px;
+        }
+
+        .cover-36 {
+            width: 36px;
+            height: 36px;
+        }
+
+        .errorlist {
+            color: red;
+        }
+
+        .py {
+            color: #fe2121;
+        }
+
+        .zhch {
+            color: #f2bf45;
+        }
+
+        .logo a:hover,
+        .logo a:active,
+        .logo a:focus,
+        .logo a:link,
+        .logo a:visited {
+            text-decoration: none;
+        }
+
+        .preview-area {
+            border: 1px solid #ccc;
+            display: none;
+        }
+        .comment-item
+        {
+            display: flex;
+            flex-wrap: nowrap;
+        }
+        .head{
+            flex:0 0 50px;
+            align-self: flex-start;
+            padding-top: 5px;
+            /*height: 50px;*/
+            /*border: 1px solid red;*/
+        }
+        .content{
+
+            flex:1 1 auto;
+            padding-left: 6px;
+            display: flex;
+            flex-direction: column;
+        }
+        .content .header{
+            display: flex;
+        }
+        .content .header .user{
+            margin-right: auto;
+        }
+
+        .content .info{
+            padding-top: 10px;
+        }
+    </style>
+</head>
+<body class="bg-faded">
+<header>
+    <nav class="navbar navbar-toggleable-md navbar-light bg-white">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <h1 class="navbar-brand logo">
+            <a class="font-weight-bold h4" href="http://www.pythonzh.cn/">
+                <span class="py">Python</span><span class="zhch">zhcn</span></a>
+        </h1>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            
+            <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                
+                    <li class="nav-item">
+                        <a class="nav-link" href="http://www.pythonzh.cn/user/login/?next=/post/73/">登录</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="http://www.pythonzh.cn/user/signup/">注册</a>
+                    </li>
+                
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<div class="container">
+    <div class="row">
+        
+            
+    <main class="col-md-8">
+        <div class="card mt-3">
+            <nav class="breadcrumb m-0 pb-0 bg-white">
+                <a class="breadcrumb-item" href="http://www.pythonzh.cn/">Pythonzhcn</a>
+                
+                <a class="breadcrumb-item active" href="http://www.pythonzh.cn/category/tools-resources/">工具资源</a>
+            </nav>
+            <div class="card-block">
+                <hr class="mt-0">
+                <div class="media">
+                    <div class="media-body">
+                        <h1 class="card-title h5 post-title font-weight-bold mt-0">有谁知道 The Django Book 网站的源码在哪么？</h1>
+                        <ul class="list-unstyled list-inline text-muted small list-dot-divider">
+                            <li class="list-inline-item m-0"><a class="text-muted" href="http://www.pythonzh.cn/user/1/">追梦人物</a>
+                            </li>
+                            <li class="list-inline-item m-0">
+                                <time datetime="2017年6月9日 11:10">6月前</time>
+                            </li>
+                            <li class="list-inline-item m-0">593 次点击</li>
+                            
+                        </ul>
+                    </div>
+                    <a href="http://www.pythonzh.cn/user/1/">
+                        <img class="d-flex ml-3 rounded mugshot-48" src="./有谁知道 The Django Book 网站的源码在哪么？ - Pythonzhcn_files/8fedcf6b4e5c3b45d747498356699da6.jpg" alt="">
+                    </a>
+                </div>
+                
+                    <hr class="mt-0">
+                    <div class="card-text">
+                        <p><a href="http://djangobook.py3k.cn/2.0/">The Django Book 2.0</a> 的中文版网站，想做一个类似的书籍翻译系统。搜遍百度 google 也找不到源码，难道没有开源？那这个中文版网站是如何搭建的？</p>
+                    </div>
+                
+            </div>
+            <div class="card-footer">
+                
+                
+                <ul class="list-unstyled list-inline m-0">
+                    <li class="list-inline-item"><a class="btn btn-sm btn-outline-secondary text-primary
+                            js-recommend nologin " data-state="0" href="http://www.pythonzh.cn/activity/follow/19/73/recommend/"><i class="fa fa-chevron-up mr-1" aria-hidden="true"></i><span>0</span></a></li>
+                    <li class="list-inline-item"><a class="btn btn-sm btn-outline-secondary text-primary
+                            js-unrecommend nologin " data-state="0" href="http://www.pythonzh.cn/activity/follow/19/73/unrecommend/"><i class="fa fa-chevron-down mr-1" aria-hidden="true"></i><span>0</span></a></li>
+                    
+                        <li class="list-inline-item float-right">
+                            
+                            
+                                <a class="btn btn-sm btn-outline-primary" href="http://www.pythonzh.cn/activity/follow/19/73/favorite/?next=/post/73/">
+                                    <i class="fa fa-bookmark-o mr-1" aria-hidden="true"></i>收藏</a>
+                            
+                        </li>
+                    
+                </ul>
+            </div>
+        </div>
+        <ul class="list-group mt-3" id="comment-area">
+            
+                <li class="list-group-item font-weight-bold">
+                    4 条回复
+                    <span class="mx-1">|</span>
+                    4 人参与
+                </li>
+            <li class="list-group-item comment-item">
+                <div class="head">
+                    <img class="mr-2 mugshot-48 rounded hidden-xs-down" src="./有谁知道 The Django Book 网站的源码在哪么？ - Pythonzhcn_files/c0df95213cf2acbbfb19df05ac6ca8c4.jpg" alt="">
+                    <img class="mr-2 mugshot-24 rounded hidden-sm-up" src="./有谁知道 The Django Book 网站的源码在哪么？ - Pythonzhcn_files/c0df95213cf2acbbfb19df05ac6ca8c4.jpg" alt="">
+                </div>
+                <div class="content">
+
+                    <div class="header">
+                        <span class="user"><a href="#">yusyuyu</a></span>
+                        <span class="floor">#0</span>
+                    </div>
+
+                    <div class="comment-content">
+
+                        请叫我雷锋 https://github.com/freetiger/mybook
+
+                    </div>
+                    <div class="info">
+                        <span>4</span>
+                        <span>6</span>
+                        <span>六月前</span>
+                        <span><a href="#">回复</a></span>
+                    </div>
+                </div>
+
+            </li>
+
+
+            <li class="list-group-item comment-item">
+                <div class="head">
+                    <img class="mr-2 mugshot-48 rounded hidden-xs-down" src="./有谁知道 The Django Book 网站的源码在哪么？ - Pythonzhcn_files/c0df95213cf2acbbfb19df05ac6ca8c4.jpg" alt="">
+                    <img class="mr-2 mugshot-24 rounded hidden-sm-up" src="./有谁知道 The Django Book 网站的源码在哪么？ - Pythonzhcn_files/c0df95213cf2acbbfb19df05ac6ca8c4.jpg" alt="">
+                </div>
+                <div class="content">
+
+                    <div class="header">
+                        <span class="user"><a href="#">yusyuyu</a></span>
+                        <span class="floor">#0</span>
+                    </div>
+
+                    <div class="comment-content">
+
+                        请叫我雷锋 https://github.com/freetiger/mybook
+
+                    </div>
+                    <div class="info">
+                        <span>4</span>
+                        <span>6</span>
+                        <span>六月前</span>
+                        <span><a href="#">回复</a></span>
+                    </div>
+                </div>
+
+            </li>
+
+            <li class="list-group-item comment-item">
+                <div class="head">
+                    <img class="mr-2 mugshot-48 rounded hidden-xs-down" src="./有谁知道 The Django Book 网站的源码在哪么？ - Pythonzhcn_files/c0df95213cf2acbbfb19df05ac6ca8c4.jpg" alt="">
+                    <img class="mr-2 mugshot-24 rounded hidden-sm-up" src="./有谁知道 The Django Book 网站的源码在哪么？ - Pythonzhcn_files/c0df95213cf2acbbfb19df05ac6ca8c4.jpg" alt="">
+                </div>
+                <div class="content">
+
+                    <div class="header">
+                        <span class="user"><a href="#">yusyuyu</a></span>
+                        <span class="floor">#0</span>
+                    </div>
+
+                    <div class="comment-content">
+
+                        请叫我雷锋 https://github.com/freetiger/mybook
+
+                    </div>
+                    <div class="info">
+                        <span>4</span>
+                        <span>6</span>
+                        <span>六月前</span>
+                        <span><a href="#">回复</a></span>
+                    </div>
+                </div>
+
+            </li>
+
+            <li class="list-group-item comment-item">
+                <div class="head">
+                    <img class="mr-2 mugshot-48 rounded hidden-xs-down" src="./有谁知道 The Django Book 网站的源码在哪么？ - Pythonzhcn_files/c0df95213cf2acbbfb19df05ac6ca8c4.jpg" alt="">
+                    <img class="mr-2 mugshot-24 rounded hidden-sm-up" src="./有谁知道 The Django Book 网站的源码在哪么？ - Pythonzhcn_files/c0df95213cf2acbbfb19df05ac6ca8c4.jpg" alt="">
+                </div>
+                <div class="content">
+
+                    <div class="header">
+                        <span class="user"><a href="#">yusyuyu</a></span>
+                        <span class="floor">#0</span>
+                    </div>
+
+                    <div class="comment-content">
+
+                        请叫我雷锋 https://github.com/freetiger/mybook
+
+                    </div>
+                    <div class="info">
+                        <span>4</span>
+                        <span>6</span>
+                        <span>六月前</span>
+                        <span><a href="#">回复</a></span>
+                    </div>
+                </div>
+
+            </li>
+
+            <li class="list-group-item comment-item">
+                <div class="head">
+                    <img class="mr-2 mugshot-48 rounded hidden-xs-down" src="./有谁知道 The Django Book 网站的源码在哪么？ - Pythonzhcn_files/c0df95213cf2acbbfb19df05ac6ca8c4.jpg" alt="">
+                    <img class="mr-2 mugshot-24 rounded hidden-sm-up" src="./有谁知道 The Django Book 网站的源码在哪么？ - Pythonzhcn_files/c0df95213cf2acbbfb19df05ac6ca8c4.jpg" alt="">
+                </div>
+                <div class="content">
+
+                    <div class="header">
+                        <span class="user"><a href="#">yusyuyu</a></span>
+                        <span class="floor">#0</span>
+                    </div>
+
+                    <div class="comment-content">
+
+                        请叫我雷锋 https://github.com/freetiger/mybook
+
+                    </div>
+                    <div class="info">
+                        <span>4</span>
+                        <span>6</span>
+                        <span>六月前</span>
+                        <span><a href="#">回复</a></span>
+                    </div>
+                </div>
+
+            </li>
+            
+        </ul>
+        <div class="card mt-3">
+            <div class="card-header bg-white">
+                <span class="text-muted">添加一条新回复</span>
+            </div>
+            <div class="card-block">
+                
+                    <div>
+                        请
+                        <a href="http://www.pythonzh.cn/user/login/?next=/post/73/">登录</a>
+                        或者
+                        <a href="http://www.pythonzh.cn/user/signup/?next=/post/73/">注册</a>
+                        后发表回复
+                    </div>
+                
+            </div>
+        </div>
+    </main>
+
+            
+                <aside class="col-md-4">
+                    <div class="card card-block mt-3">
+                        <a class="h6 mb-0 " href="http://www.pythonzh.cn/new/"><i class="fa fa-plus mr-2" aria-hidden="true"></i>快速发布新帖子</a>
+                    </div>
+                    <ul class="list-group mt-3">
+                        <li class="list-group-item">
+                            <h5 class="font-weight-bold">新加入会员</h5>
+                        </li>
+                        
+                        
+                            <li class="list-group-item">
+                                <div class="media w-100">
+                                    <a href="http://www.pythonzh.cn/user/820/">
+                                        <img class="d-flex mr-2 mugshot-24 rounded" src="./有谁知道 The Django Book 网站的源码在哪么？ - Pythonzhcn_files/35050645" alt="">
+                                    </a>
+                                    <div class="media-body">
+                                        <h6 class="mt-0">
+                                            <a class="small text-muted" href="http://www.pythonzh.cn/user/820/">
+                                                LLjust
+                                            </a>
+                                        </h6>
+                                        <div class="small text-muted">第 820
+                                            号会员，加入于 2018年1月3日 09:28</div>
+                                    </div>
+                                </div>
+                            </li>
+                        
+                            <li class="list-group-item">
+                                <div class="media w-100">
+                                    <a href="http://www.pythonzh.cn/user/819/">
+                                        <img class="d-flex mr-2 mugshot-24 rounded" src="./有谁知道 The Django Book 网站的源码在哪么？ - Pythonzhcn_files/e092f666540d107f26509bd07e5f2674.jpg" alt="">
+                                    </a>
+                                    <div class="media-body">
+                                        <h6 class="mt-0">
+                                            <a class="small text-muted" href="http://www.pythonzh.cn/user/819/">
+                                                magiczhang
+                                            </a>
+                                        </h6>
+                                        <div class="small text-muted">第 819
+                                            号会员，加入于 2018年1月2日 21:59</div>
+                                    </div>
+                                </div>
+                            </li>
+                        
+                            <li class="list-group-item">
+                                <div class="media w-100">
+                                    <a href="http://www.pythonzh.cn/user/818/">
+                                        <img class="d-flex mr-2 mugshot-24 rounded" src="./有谁知道 The Django Book 网站的源码在哪么？ - Pythonzhcn_files/0e05f48fbd982eefe609e4a4803e1145.jpg" alt="">
+                                    </a>
+                                    <div class="media-body">
+                                        <h6 class="mt-0">
+                                            <a class="small text-muted" href="http://www.pythonzh.cn/user/818/">
+                                                guigu
+                                            </a>
+                                        </h6>
+                                        <div class="small text-muted">第 818
+                                            号会员，加入fffffffffff于 2018年1月2日 19:12</div>
+                                    </div>
+                                </div>
+                            </li>
+                        
+                            <li class="list-group-item">
+                                <div class="media w-100">
+                                    <a href="http://www.pythonzh.cn/user/817/">
+                                        <img class="d-flex mr-2 mugshot-24 rounded" src="./有谁知道 The Django Book 网站的源码在哪么？ - Pythonzhcn_files/40070209fd2513dcbfd54993f39e7493.jpg" alt="">
+                                    </a>
+                                    <div class="media-body">
+                                        <h6 class="mt-0">
+                                            <a class="small text-muted" href="http://www.pythonzh.cn/user/817/">
+                                                songboriceboy
+                                            </a>
+                                        </h6>
+                                        <div class="small text-muted">第 817
+                                            号会员，加入于 2018年1月1日 19:26</div>
+                                    </div>
+                                </div>
+                            </li>
+                        
+                            <li class="list-group-item">
+                                <div class="media w-100">
+                                    <a href="http://www.pythonzh.cn/user/816/">
+                                        <img class="d-flex mr-2 mugshot-24 rounded" src="./有谁知道 The Django Book 网站的源码在哪么？ - Pythonzhcn_files/24266098" alt="">
+                                    </a>
+                                    <div class="media-body">
+                                        <h6 class="mt-0">
+                                            <a class="small text-muted" href="http://www.pythonzh.cn/user/816/">
+                                                1049759078
+                                            </a>
+                                        </h6>
+                                        <div class="small text-muted">第 816
+                                            号会员，加入于 2017年12月29日 23:35</div>
+                                    </div>
+                                </div>
+                            </li>
+                        
+                    </ul>
+                    <ul class="list-group mt-3">
+                        <li class="list-group-item">
+                            <h5 class="font-weight-bold">热门讨论</h5>
+                        </li>
+                        
+                        
+                            <li class="list-group-item">暂无帖子</li>
+                        
+                    </ul>
+                    <div class="card card-block mt-3">
+                        <div>
+                            <i class="fa fa-rss mr-2" aria-hidden="true"></i>通过 <a href="http://www.pythonzh.cn/all/rss/">RSS</a> 或 <a href="http://www.pythonzh.cn/all/atom/">Atom</a> 订阅
+                        </div>
+                    </div>
+                </aside>
+            
+        
+    </div>
+</div>
+<script src="./有谁知道 The Django Book 网站的源码在哪么？ - Pythonzhcn_files/hm.js.下载"></script><script src="./有谁知道 The Django Book 网站的源码在哪么？ - Pythonzhcn_files/push.js.下载"></script><script src="./有谁知道 The Django Book 网站的源码在哪么？ - Pythonzhcn_files/jquery.min.js.下载"></script>
+<script src="./有谁知道 The Django Book 网站的源码在哪么？ - Pythonzhcn_files/tether.min.js.下载"></script>
+<script src="./有谁知道 The Django Book 网站的源码在哪么？ - Pythonzhcn_files/bootstrap.min.js.下载"></script>
+<script>
+    $(document).ready(function () {
+        // 给表单非隐藏的 input 标签添加 Bootstrap 需要的 form-control 样式
+        $("form .form-group :input[type!=hidden]").addClass('form-control');
+        $("form .form-group :input[type=button]").removeClass('form-control');
+        $("form .form-group :input[type=checkbox]").removeClass('form-control');
+
+        // 预览
+        $('#js-preview').on('click', function (e) {
+            var $this = $(this);
+            var $textarea = $this.parents('form').find('textarea');
+            $.post('/ajax/preview/', {
+                    'content': $textarea.val()
+                }, function (data) {
+                    $textarea.hide();
+                    $('#js-preview-area').text('').append(data.preview).css(
+                        {'min-height': $textarea.height()}
+                    ).addClass('rounded bg-faded p-2').show()
+                }
+            );
+            return false
+        });
+
+        // 编辑
+        $('#js-edit').on('click', function (e) {
+            var $this = $(this);
+            $('#js-preview-area').hide();
+            $this.parents('form').find('textarea').show().focus();
+            return false
+        })
+    });
+
+
+    //百度链接自动推送脚本代码
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        }
+        else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+
+    // 百度统计脚本代码
+    var _hmt = _hmt || [];
+    (function () {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?537d8be6a7994e059f726517533c7045";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+
+    <script>
+        $(document).ready(function () {
+            //回复
+            $('.js-reply').on('click', function (e) {
+                if ($(this).hasClass('nologin')) {
+                    alert("登录后才能回复");
+                    return false
+                }
+                var $nickname = $(this).attr('data-nickname');
+                var $parent = $(this).attr('data-parent');
+                var $mention = '@' + $nickname + ' ';
+                var $form = $('.form');
+                var $val = $form.find('textarea').val();
+                $form.find('textarea').val($val + $mention).focus();
+
+                if ($parent) {
+                    $form.find('#id_parent').val($parent)
+                }
+                return false
+            });
+
+            //防止表单重复提交
+            $('form').submit(function () {
+                $('#js-create').attr('disabled', true).val('发布中...');
+            });
+
+            // 赞同
+            $(".js-up").on('click', function () {
+                var $this = $(this);
+                var $state = parseInt($this.attr('data-state'));
+                var $count = parseInt($this.find('span').text());
+                var $url = $this.attr("href");
+                var $urlBits = $url.split('/');
+                var $next = $this.parents('li.list-inline-item').next().find('a');
+                var $nextState = parseInt($next.attr('data-state'));
+
+                if ($this.hasClass('nologin')) {
+                    alert("请在登录后执行该操作");
+                    return false
+                } else if ($this.hasClass('self')) {
+                    alert("自己不能给自己点赞");
+                    return false
+                }
+
+
+                if ($nextState) {
+                    $next.click();
+                }
+                $.post($url, {}, function () {
+                    if ($state) {
+                        $this.find('i').removeClass('text-danger');
+                        $this.find('span').text($count - 1);
+                        $this.attr('data-state', 0);
+                        $urlBits[2] = 'follow';
+                        $this.attr("href", $urlBits.join('/'))
+                    } else {
+                        $this.find('i').addClass('text-danger');
+                        $this.find('span').text($count + 1);
+                        $this.attr('data-state', 1);
+                        $urlBits[2] = 'unfollow';
+                        $this.attr("href", $urlBits.join('/'))
+                    }
+                });
+                return false
+            });
+
+            // 反对
+            $(".js-down").on('click', function () {
+                var $this = $(this);
+                var $state = parseInt($this.attr('data-state'));
+                var $count = parseInt($this.find('span').text());
+                var $prev = $this.parents('li.list-inline-item').prev().find('a');
+                var $prevState = parseInt($prev.attr('data-state'));
+                var $url = $this.attr("href");
+                var $urlBits = $url.split('/');
+
+                if ($this.hasClass('nologin')) {
+                    alert("请在登录后执行该操作");
+                    return false
+                } else if ($this.hasClass('self')) {
+                    alert("自己不能反对自己");
+                    return false
+                }
+
+                if ($prevState) {
+                    $prev.click();
+                }
+                $.post($url, {}, function () {
+                    if ($state) {
+                        $this.find('i').removeClass('text-danger');
+                        $this.find('span').text($count - 1);
+                        $this.attr('data-state', 0);
+                        $urlBits[2] = 'follow';
+                        $this.attr("href", $urlBits.join('/'))
+                    } else {
+                        $this.find('i').addClass('text-danger');
+                        $this.find('span').text($count + 1);
+                        $this.attr('data-state', 1);
+                        $urlBits[2] = 'unfollow';
+                        $this.attr("href", $urlBits.join('/'))
+                    }
+                });
+                return false
+            });
+
+            // 推荐
+            $(".js-recommend").on('click', function () {
+                var $this = $(this);
+                var $state = parseInt($this.attr('data-state'));
+                var $count = parseInt($this.find('span').text());
+                var $url = $this.attr("href");
+                var $urlBits = $url.split('/');
+                var $next = $this.parents('li.list-inline-item').next().find('a');
+                var $nextState = parseInt($next.attr('data-state'));
+
+                if ($this.hasClass('nologin')) {
+                    alert("请在登录后执行该操作");
+                    return false
+                } else if ($this.hasClass('self')) {
+                    alert("自己不能推荐自己的帖子");
+                    return false
+                }
+
+                if ($nextState) {
+                    $next.click();
+                }
+                $.post($url, {}, function () {
+                    if ($state) {
+                        $this.removeClass('btn-danger text-white').addClass('btn-outline-secondary text-primary');
+                        $this.find('span').text($count - 1);
+                        $this.attr('data-state', 0);
+                        $urlBits[2] = 'follow';
+                        $this.attr("href", $urlBits.join('/'))
+                    } else {
+                        $this.removeClass('btn-outline-secondary text-primary').addClass('btn-danger text-white');
+                        $this.find('span').text($count + 1);
+                        $this.attr('data-state', 1);
+                        $urlBits[2] = 'unfollow';
+                        $this.attr("href", $urlBits.join('/'))
+                    }
+                });
+                return false
+            });
+
+            // 不推荐
+            $(".js-unrecommend").on('click', function () {
+                var $this = $(this);
+                var $state = parseInt($this.attr('data-state'));
+                var $count = parseInt($this.find('span').text());
+                var $prev = $this.parents('li.list-inline-item').prev().find('a');
+                var $prevState = parseInt($prev.attr('data-state'));
+                var $url = $this.attr("href");
+                var $urlBits = $url.split('/');
+
+                if ($this.hasClass('nologin')) {
+                    alert("请在登录后执行该操作");
+                    return false
+                } else if ($this.hasClass('self')) {
+                    alert("自己不能反对自己");
+                    return false
+                }
+
+                if ($prevState) {
+                    $prev.click();
+                }
+                $.post($url, {}, function () {
+                    if ($state) {
+                        $this.removeClass('btn-danger text-white').addClass('btn-outline-secondary text-primary');
+                        $this.find('span').text($count - 1);
+                        $this.attr('data-state', 0);
+                        $urlBits[2] = 'follow';
+                        $this.attr("href", $urlBits.join('/'))
+                    } else {
+                        $this.removeClass('btn-outline-secondary text-primary').addClass('btn-danger text-white');
+                        $this.find('span').text($count + 1);
+                        $this.attr('data-state', 1);
+                        $urlBits[2] = 'unfollow';
+                        $this.attr("href", $urlBits.join('/'))
+                    }
+                });
+                return false
+            });
+
+            // ctrl + enter 自动提交表单
+            $(document).keydown(function (e) {
+                if (e.which == 13 && e.ctrlKey) {
+                    $('form').submit();
+                }
+            });
+        });
+    </script>
+
+<footer class="bg-white mt-3 py-2">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="text-muted mb-3"><span class="py font-weight-bold">Python</span><span class="zhch font-weight-bold">zhcn</span> - Python 中文社区，我们将致力于打造国内最好的 Python 开发者社区！
+                </div>
+                <small class="text-muted">Powered by <a class="small" href="https://www.djangoproject.com/" target="_blank">Django</a>
+                </small>
+                <div class="w-100"></div>
+                <small class="text-muted">Designed by <a class="small" href="http://zmrenwu.com/" target="_blank">追梦人物</a></small>
+            </div>
+            <div class="col-md-4">
+                <ul class="list-unstyled list-inline d-flex justify-content-between">
+                    <li class="list-inline-item font-weight-bold mr-3"><a href="http://www.pythonzh.cn/about/">关于</a></li>
+                    <li class="list-inline-item font-weight-bold mr-3"><a href="http://pythonzh.cn/post/16/">使用指南</a>
+                    </li>
+                    <li class="list-inline-item font-weight-bold"><a href="http://www.pythonzh.cn/contact/">联系我们</a></li>
+                    <li class="list-inline-item font-weight-bold"><a href="http://www.pythonzh.cn/donate/">捐赠</a></li>
+                    
+                </ul>
+            </div>
+        </div>
+        <div class="text-center small text-muted mt-3">
+            <span>Copyright © 2017 <a href="http://www.pythonzh.cn/">Pythonzhcn</a></span>
+            <div class="w-100 mt-1"></div>
+            <span>蜀ICP备16036143号-2</span>
+        </div>
+    </div>
+</footer>
+
+</body></html>
